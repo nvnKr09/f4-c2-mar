@@ -5,7 +5,7 @@ import ProfileSVG from "../Assets/user-1-svgrepo-com.svg";
 const Profile = ({userDetails,setUserDetails}) => {
 
     useEffect(() => {
-        // Fetch user details from local storage when the component mounts
+        // Fetch user details from local storage when the component mount
         const storedUser = JSON.parse(localStorage.getItem('user Data'));
         if (storedUser) {
           setUserDetails(storedUser);
