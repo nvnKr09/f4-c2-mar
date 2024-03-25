@@ -26,7 +26,7 @@ const Profile = ({userDetails,setUserDetails}) => {
       <h1>Signup Successful!</h1>
       <div className="form">
         <h1>Profile</h1>
-        <img src={ProfileSVG} alt="Profile Image" />
+        <img src={userDetails.image} alt="Profile Image" />
         <div className="details">
           <p>User ID: {userDetails.id}</p>
           <p>Full Name: {userDetails.firstName + " " + userDetails.lastName}</p>
